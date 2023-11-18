@@ -8,6 +8,9 @@ public class BtnStart : MonoBehaviour
     private RectTransform recttransformBtn;
     private AudioSource audiosourceBtn;
 
+    private AudioClip clip1;
+    private AudioClip clip2;
+
     void Awake()
     {
         recttransformBtn = GetComponent<RectTransform>();
@@ -31,7 +34,7 @@ public class BtnStart : MonoBehaviour
 
     public void mouseEnter()
     {
-        audiosourceBtn.Play();
+        audiosourceBtn.PlayOneShot(clip1);
     }
 
 }
