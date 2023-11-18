@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rigidbodyPlayer;
+    private Animator animatorPlayer;
 
-    public float velocity;
+    private float velocity;
     private int CurrentScale;
-    private float resize;
-    private float lastPrintTime, printInterval = 0.3f;
+    private float resize; 
+    private float animatorPrintTime,lastPrintTime, printInterval = 0.3f; //TIME CONTROLL VARIABLES
 
     void Start()
     {
@@ -20,13 +19,16 @@ public class PlayerController : MonoBehaviour
         velocity = 4f;
         lastPrintTime = Time.time;
 
-        rigidbodyPlayer = GetComponent<Rigidbody2D>();        
+        rigidbodyPlayer = GetComponent<Rigidbody2D>();
+        animatorPlayer = GetComponent<Animator>();
     }
 
     void Update()
     {
-        //SCALE CONTROL
-        //CONTROL THE PLAYER'S CURRENT SCALE AND VELOCITY AFTER A INTERVAL OF 0,3 SECONDS
+        animatorPrintTime += Time.deltaTime;
+        
+        //SCALE CONTROLL
+        //CONTROLL THE PLAYER'S CURRENT SCALE AND VELOCITY AFTER A INTERVAL OF 0,3 SECONDS
         if(Time.time - lastPrintTime >= printInterval) 
         {
             if ((Input.GetKeyDown(KeyCode.A) && CurrentScale > 1) || (Input.GetKeyDown(KeyCode.D) && CurrentScale < 3))
@@ -50,6 +52,13 @@ public class PlayerController : MonoBehaviour
 
             }
         }
+
+        //CONTROLL THE BLINK ANIMATION TIME INTERVAL
+        if(animatorPrintTime >= 5)
+        {
+            animatorPlayer.SetTrigger("blink");
+            animatorPrintTime = 0;
+        }
     }
 
     void FixedUpdate()
@@ -58,8 +67,8 @@ public class PlayerController : MonoBehaviour
         //STOP PLAYER IF NO KEY IS PRESSED
         rigidbodyPlayer.velocity = new Vector3(0f, 0f, 0f);
 
-        //MOVEMENTATION
-        //CONTROL THE PLAYER'S CURRENT POSITION IN WORLD
+        //MOVEMENT CONTROLL
+        //CONTROLL THE PLAYER'S CURRENT POSITION IN WORLD
         if (Input.GetKey(KeyCode.W))
         {
             rigidbodyPlayer.velocity = new Vector3(0f, velocity, 0f);
@@ -71,7 +80,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    //CONTROL THE RESIZE ANIMATION
+    //CHECK THE PLAYER COLLISION
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //GAME OVER IF PALYER COLLIDE'S PILLAR
+        if (collision.CompareTag("Pillar"))
+        {
+            //FAZER O GAME OVER AQUI DENTRO
+        }
+    }
+
+    //CONTROLL THE RESIZE ANIMATION
     IEnumerator changeSize(float resize)
     {
         for (int i = 0; i < 10; i++)
@@ -80,4 +99,5 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
     }
+
 }
