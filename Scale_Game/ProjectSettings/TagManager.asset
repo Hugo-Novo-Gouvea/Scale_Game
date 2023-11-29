@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pillar
+  - PillarBase
+  - PlayerHolder
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayerHolder
   - Water
   - UI
-  - 
+  - Pillar
   - 
   - 
   - 

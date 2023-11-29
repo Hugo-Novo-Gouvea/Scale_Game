@@ -6,6 +6,7 @@ public class PillarMovement : MonoBehaviour
 {
 
     private Rigidbody2D rigidbodyPillar;
+    private float time;
 
     private int pillarChoice;
 
@@ -20,13 +21,16 @@ public class PillarMovement : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 
 
     void FixedUpdate()
     {
-        rigidbodyPillar.velocity = new Vector3(-6f, 0, 0);
+        GameObject currentTime = GameObject.FindGameObjectWithTag("MainCamera");
+        time = currentTime.GetComponent<GameManager>().time;
+        time = time * 0.1f;
+        rigidbodyPillar.velocity = new Vector3(-5f-time, 0, 0);
     }
 
 }

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,13 +10,15 @@ public class PillarSpawner : MonoBehaviour
 
     private float printTime;
     private float pillarSpawnYLocation;
+
+    public bool start = false;
     
 
     private Vector3 pillarSpawnLocation;
 
     void Start()
     {
-        
+       
     }
 
     
@@ -23,7 +26,7 @@ public class PillarSpawner : MonoBehaviour
     {
         printTime += Time.deltaTime;
 
-        if (printTime >= 4)
+        if (printTime >= 4 && start == true)
         {
             CreatePillar();
             printTime = 0;

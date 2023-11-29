@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4744095880935054803}
   - component: {fileID: 4870685025079548810}
   - component: {fileID: 7989040055992539788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -114,7 +114,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0020515919}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 6441560037455809243}
   - component: {fileID: 8456838029735517630}
   - component: {fileID: 5537112416149531700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -230,7 +230,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -244,7 +244,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.004466057}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 9183345926453667417}
   - component: {fileID: 7954376852631843752}
   - component: {fileID: 3975503196675149699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -393,7 +393,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -407,7 +407,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0014476776}
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 3235972495218927071}
   m_Layer: 0
   m_Name: Pillar
-  m_TagString: Untagged
+  m_TagString: PillarBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 9028379163875439008}
   - component: {fileID: 6103127886290435133}
   - component: {fileID: 1380808926206056041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -650,7 +650,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -664,7 +664,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0032200813}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 4173106236913643768}
   - component: {fileID: 938770162199518699}
   - component: {fileID: 4360823499231278988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -780,7 +780,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -794,7 +794,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0015435219}
@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 8393934420746796585}
   - component: {fileID: 1676627961671893952}
   - component: {fileID: 1272732367248421388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -883,7 +883,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -910,7 +910,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -924,7 +924,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.005177498}
@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 6980778071230572470}
   - component: {fileID: 8255041982632875354}
   - component: {fileID: 5142598947062935805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1112,7 +1112,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1139,7 +1139,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1153,7 +1153,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.001991272}
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 1071155535855202627}
   - component: {fileID: 8069619328344542817}
   - component: {fileID: 4066493415820965323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1275,7 +1275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1302,7 +1302,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1316,7 +1316,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0020713806}
@@ -1343,7 +1343,7 @@ GameObject:
   - component: {fileID: 4101228060456134868}
   - component: {fileID: 1272223793536108489}
   - component: {fileID: 6047742887195994172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1432,7 +1432,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1446,7 +1446,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0046668053}
@@ -1506,7 +1506,7 @@ GameObject:
   - component: {fileID: 6240685776547392397}
   - component: {fileID: 7430309967817590367}
   - component: {fileID: 772042128325306589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1595,7 +1595,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1609,7 +1609,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0023655891}
@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 6513572220051922100}
   - component: {fileID: 2363366488844576152}
   - component: {fileID: 559668705500610410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1698,7 +1698,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1725,7 +1725,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1739,7 +1739,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.003876686}
@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 6004594125040493787}
   - component: {fileID: 6843765897182595627}
   - component: {fileID: 6341381731981702502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1828,7 +1828,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1855,7 +1855,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1869,7 +1869,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.002973318}
@@ -1896,7 +1896,7 @@ GameObject:
   - component: {fileID: 4773667379934852856}
   - component: {fileID: 9067066513404868410}
   - component: {fileID: 3248480831492297843}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -1958,7 +1958,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1985,7 +1985,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1999,7 +1999,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0024147034}
@@ -2026,7 +2026,7 @@ GameObject:
   - component: {fileID: 5102806719526706350}
   - component: {fileID: 4728414470318347867}
   - component: {fileID: 913548490294728700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -2088,7 +2088,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2034948373, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2115,7 +2115,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -2129,7 +2129,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0019416809}
@@ -2156,7 +2156,7 @@ GameObject:
   - component: {fileID: 3419278594780868409}
   - component: {fileID: 3103465117003779141}
   - component: {fileID: 2680627601466478632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -2218,7 +2218,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2245,7 +2245,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -2259,7 +2259,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0028038025}
@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 1165015472436262866}
   - component: {fileID: 6409650995842303914}
   - component: {fileID: 8108780709842838707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -2348,7 +2348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2375,7 +2375,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -2389,7 +2389,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0009768009}
@@ -2416,7 +2416,7 @@ GameObject:
   - component: {fileID: 6244973389920053635}
   - component: {fileID: 5489856363571772068}
   - component: {fileID: 2120405758812733181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -2478,7 +2478,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1643870344, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2505,7 +2505,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -2519,7 +2519,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.0026357174}
@@ -2579,7 +2579,7 @@ GameObject:
   - component: {fileID: 628745925542779101}
   - component: {fileID: 7695181210445650737}
   - component: {fileID: 8433553322392771470}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPillar
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -2641,7 +2641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 529263392, guid: 8aad2c7ab70e6ff4b82ba2db68373f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2668,7 +2668,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -2682,7 +2682,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0012512207}

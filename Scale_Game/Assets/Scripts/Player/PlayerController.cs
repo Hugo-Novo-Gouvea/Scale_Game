@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,9 +11,10 @@ public class PlayerController : MonoBehaviour
     private Animator animatorPlayer;
 
     private float velocity;
-    private int CurrentScale;
+    public int CurrentScale;
     private float resize; 
-    private float animatorPrintTime,lastPrintTime, printInterval = 0.3f; //TIME CONTROLL VARIABLES
+    private float animatorPrintTime,lastPrintTime, printInterval = 0.3f; //TIME CONTROL VARIABLES
+    private bool canMove = true;
 
     void Start()
     {
@@ -31,7 +34,7 @@ public class PlayerController : MonoBehaviour
         //CONTROLL THE PLAYER'S CURRENT SCALE AND VELOCITY AFTER A INTERVAL OF 0,3 SECONDS
         if(Time.time - lastPrintTime >= printInterval) 
         {
-            if ((Input.GetKeyDown(KeyCode.A) && CurrentScale > 1) || (Input.GetKeyDown(KeyCode.D) && CurrentScale < 3))
+            if (((Input.GetKeyDown(KeyCode.A) && CurrentScale > 1) || (Input.GetKeyDown(KeyCode.D) && CurrentScale < 3)) && canMove == true)
             {
 
                 if (Input.GetKeyDown(KeyCode.A))
@@ -69,15 +72,22 @@ public class PlayerController : MonoBehaviour
 
         //MOVEMENT CONTROLL
         //CONTROLL THE PLAYER'S CURRENT POSITION IN WORLD
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && canMove == true)
         {
             rigidbodyPlayer.velocity = new Vector3(0f, velocity, 0f);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && canMove == true)
         {
             rigidbodyPlayer.velocity = new Vector3(0f, -velocity, 0f);
         }
-        
+        if(transform.position.y < -6.318)
+        {
+            transform.position = new Vector3(transform.position.x, -6.318f, transform.position.z);
+        }
+        if (transform.position.y > 6.319)
+        {
+            transform.position = new Vector3(transform.position.x, 6.319f, transform.position.z);
+        }
     }
 
     //CHECK THE PLAYER COLLISION
@@ -86,7 +96,17 @@ public class PlayerController : MonoBehaviour
         //GAME OVER IF PALYER COLLIDE'S PILLAR
         if (collision.CompareTag("Pillar"))
         {
-            //FAZER O GAME OVER AQUI DENTRO
+            GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+            mainCamera.GetComponent<GameManager>().stopGame();
+            mainCamera.GetComponent<GameManager>().collided = true;
+            canMove = false;
+            GameObject[] pillar = GameObject.FindGameObjectsWithTag("PillarBase");
+            foreach (GameObject pillars in pillar)
+            {
+                DestroyObject(pillars);
+            }
+            Destroy(gameObject);
+            mainCamera.GetComponent<GameManager>().afterMenu();
         }
     }
 
