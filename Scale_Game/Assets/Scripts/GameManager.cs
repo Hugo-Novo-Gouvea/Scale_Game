@@ -14,19 +14,20 @@ public class GameManager : MonoBehaviour
     public GameObject MainCamera;
     public GameObject Score;
     public GameObject ScoreCanvas;
+    public GameObject Instructions;
 
     public GameObject TryAgainBtn;
     public GameObject MenuBtn;
 
     private AudioSource audioSource;
 
-    public float time;
+    public float time, instructionsOffTimer;
 
     public Text ScoreText;
 
-    private int point;
+    private int point, change, currentScale;
     private float pointTime;
-    public bool start = false, startMusic;
+    public bool start = false, startMusic, instructionsOff = false;
     public bool collided = false;
 
     void Start()
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         point = 0;
         startMusic = true;
         audioSource = GetComponent<AudioSource>();
+        instructionsOffTimer = 0;
     }
 
     void Update()
@@ -54,9 +56,33 @@ public class GameManager : MonoBehaviour
         if (pointTime >= 1 && start == true && collided == false)
         {
             GameObject currentPlayer = GameObject.FindGameObjectWithTag("Player");
-            point += currentPlayer.GetComponent<PlayerController>().CurrentScale;
+            currentScale = currentPlayer.GetComponent<PlayerController>().CurrentScale;
+            if(currentScale == 1)
+            {
+                change = 1; 
+                point += change;
+            }
+            if (currentScale == 2)
+            {
+                change = 3;
+                point += change;
+            }
+            if (currentScale == 3)
+            {
+                change = 5;
+                point += change;
+            }
             ScoreText.text = point.ToString();
             pointTime = 0;
+        }
+
+        if(instructionsOff == true)
+        {
+            instructionsOffTimer += Time.deltaTime;
+            if(instructionsOffTimer >= 6)
+            {
+                Instructions.SetActive(false);
+            }
         }
     }
 
@@ -73,6 +99,9 @@ public class GameManager : MonoBehaviour
         MainCamera.transform.position = new Vector3(0, 0, -10);
         Instantiate(Player, PlayerPosition.transform.position, PlayerPosition.transform.rotation);
         PillarSpawner.GetComponent<PillarSpawner>().start = true;
+        Instructions.SetActive(true);
+        instructionsOffTimer = 0;
+        instructionsOff = true;
         Score.SetActive(true);
         ScoreCanvas.SetActive(true);
     }
@@ -86,6 +115,7 @@ public class GameManager : MonoBehaviour
     {
         TryAgainBtn.SetActive(true);
         MenuBtn.SetActive(true);
+        Instructions.SetActive(false);
     }
 
     public void playMusic()

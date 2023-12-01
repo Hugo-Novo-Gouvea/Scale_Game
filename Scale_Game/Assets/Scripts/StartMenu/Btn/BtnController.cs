@@ -14,6 +14,7 @@ public class BtnController : MonoBehaviour
     public GameObject[] CreditsLinkedin;
     public GameObject Score;
     public GameObject ScoreText;
+    public GameObject Rules;
     public GameObject[] TryAgainBtn;
 
 
@@ -40,6 +41,7 @@ public class BtnController : MonoBehaviour
         }
         BackBtn.SetActive(true);
         Volume.SetActive(true);
+        Rules.SetActive(true);
     }
 
     public void CreditsGame()
@@ -63,6 +65,7 @@ public class BtnController : MonoBehaviour
     public void BacktoStart()
     {
         BackBtn.SetActive(false);
+        Rules.SetActive(false);
         Volume.SetActive(false);
         foreach (GameObject text in CreditsText)
         {
@@ -119,13 +122,13 @@ public class BtnController : MonoBehaviour
 
     public void DanielRemedioLinkedin()
     {
-        string url = "";
+        string url = "https://www.linkedin.com/in/daniel-remédio-aa0b6728a/";
         Application.OpenURL(url);
     }
 
     public void GabrielDiasLinkedin()
     {
-        string url = "";
+        string url = "https://www.linkedin.com/in/gabriel-dias-antunes-antonio-631bb4179/";
         Application.OpenURL(url);
     }
 
@@ -137,13 +140,13 @@ public class BtnController : MonoBehaviour
 
     public void IagoLinkedin()
     {
-        string url = "";
+        string url = "https://www.linkedin.com/in/iago-mickael-dos-santos-6a7603234/";
         Application.OpenURL(url);
     }
 
     public void MarcosGBLinkedin()
     {
-        string url = "";
+        string url = "https://www.linkedin.com/in/marcos-gabriel-barreto-13ab2b164";
         Application.OpenURL(url);
     }
 
